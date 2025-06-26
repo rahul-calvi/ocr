@@ -168,3 +168,71 @@ foreach (AnalyzedDocument receipt in receipts.Documents)
 **Endpoint:** `POST /api/receipts`
 - **Request:** JSON (user-reviewed receipt data)
 - **Response:** 200 OK
+
+# OCR Receipt Application – Specification Document
+## 6. Folder Structure
+
+```
+ocr/
+├── frontend/              # React TypeScript frontend
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   ├── pages/        # Page-level components
+│   │   ├── services/     # API service layer
+│   │   ├── models/       # TypeScript interfaces
+│   │   ├── utils/        # Utility functions
+│   │   ├── styles/       # Global and component styles
+│   │   ├── App.tsx       # Main component
+│   │   └── index.tsx     # Entry point
+│   ├── public/           # Static files
+│   └── package.json      # Frontend dependencies
+│
+├── backend/              # .NET Core backend
+│   ├── src/
+│   │   ├── Controllers/  # API endpoints
+│   │   ├── Models/       # Data models
+│   │   ├── Services/     # Business logic
+│   │   ├── Data/         # Database layer
+│   │   ├── Middleware/   # Custom middleware
+│   │   ├── Program.cs    # Entry point
+│   │   └── Startup.cs    # Configuration
+│   └── *.csproj         # Project file
+│
+├── docs/                # Documentation
+├── tests/              # Test suites
+└── README.md           # Project overview
+```
+
+
+## 6. Folder Structure
+
+```
+ocr/
+├── frontend/              # React TypeScript frontend
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   ├── pages/        # Page-level components
+│   │   ├── services/     # API service layer
+│   │   ├── models/       # TypeScript interfaces
+│   │   ├── utils/        # Utility functions
+│   │   ├── styles/       # Global and component styles
+│   │   ├── App.tsx       # Main component
+│   │   └── index.tsx     # Entry point
+│   ├── public/           # Static files
+│   └── package.json      # Frontend dependencies
+│
+├── backend/              # .NET Core backend
+│   ├── src/
+│   │   ├── Controllers/  # API endpoints
+│   │   ├── Models/       # Data models
+│   │   ├── Services/     # Business logic
+│   │   ├── Data/         # Database layer
+│   │   ├── Middleware/   # Custom middleware
+│   │   ├── Program.cs    # Entry point
+│   │   └── Startup.cs    # Configuration
+│   └── *.csproj         # Project file
+│
+├── docs/                # Documentation
+├── tests/              # Test suites
+└── README.md           # Project overview
+```
